@@ -11,8 +11,8 @@ driver.get(URL)
 
 driver.implicitly_wait(10)
 price_char = driver.find_element(by=By.CSS_SELECTOR,
-                                value="div.d-flex.ai-center.jc-end.w-100 "
-                                      "> span.text-h4.ml-1.color-800")
+                                 value="div.d-flex.ai-center.jc-end.w-100 "
+                                       "> span.text-h4.ml-1.color-800")
 
 print_int = int(price_char.text.split(" ")[0].replace(",", ""))
 print(print_int)
